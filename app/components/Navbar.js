@@ -24,7 +24,7 @@ export default function Navbar() {
           {/* Docs link */}
           <a href="https://docs.nortapp.online/" target="_blank" rel="noopener noreferrer" className="btn btn-ghost" style={{ padding:'8px 18px', fontSize:13 }}>Docs</a>
           {/* CTA — always visible */}
-          <a href="https://nort-rho.vercel.app" className="btn btn-primary" style={{ padding:'8px 18px', fontSize:13 }}>Start Trading Free</a>
+          <a href="https://www.nortapp.online/login" className="btn btn-primary" style={{ padding:'8px 18px', fontSize:13 }}>Start Trading Free</a>
 
           {/* Hamburger — mobile only */}
           <button
