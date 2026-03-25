@@ -63,9 +63,31 @@
   --blue-dim: rgba(26,127,232,0.12);
   --amber: #f5a623;
   --red: #ff6b6b;
-  --font-display: 'Syne', sans-serif;
-  --font-heading: 'Goldman', sans-serif;
-  --font-body: 'Plus Jakarta Sans', sans-serif;
+  /* Font variables are set by next/font on the <html> element.
+     These fallbacks ensure components work even if the class isn't applied. */
+  --font-display: var(--font-display, 'Syne', sans-serif);
+  --font-heading: var(--font-heading, 'Goldman', sans-serif);
+  --font-body: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+}
+
+/* ── SKIP LINK (Accessibility) ──────────────────────────────────
+ * Hidden off-screen by default, revealed on :focus for keyboard users. */
+.skip-link {
+  position: absolute;
+  top: -999px;
+  left: -999px;
+  z-index: 9999;
+  padding: 12px 20px;
+  background: #00C896;
+  color: #000;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 16px;
+  left: 16px;
 }
 
 
