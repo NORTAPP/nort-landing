@@ -63,11 +63,9 @@
   --blue-dim: rgba(26,127,232,0.12);
   --amber: #f5a623;
   --red: #ff6b6b;
-  /* Font variables are set by next/font on the <html> element.
-     These fallbacks ensure components work even if the class isn't applied. */
-  --font-display: var(--font-display, 'Syne', sans-serif);
-  --font-heading: var(--font-heading, 'Goldman', sans-serif);
-  --font-body: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+  /* Font variables (--font-display, --font-heading, --font-body)
+     are set by next/font on the <html> element via class names.
+     No need to declare them here. */
 }
 
 /* ── SKIP LINK (Accessibility) ──────────────────────────────────
