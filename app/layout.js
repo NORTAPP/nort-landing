@@ -42,6 +42,11 @@ export const metadata = {
     index: true,
     follow: true,
   },
+
+  // Base Mini App verification
+  other: {
+    'base:app_id': '69ef725c7e92b7a4af93efb6',
+  },
 }
 
 export default function RootLayout({ children }) {
